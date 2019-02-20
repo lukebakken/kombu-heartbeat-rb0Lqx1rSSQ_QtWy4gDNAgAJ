@@ -14,6 +14,7 @@ Installing setuptools, pip, wheel...done.
 
 lbakken@shostakovich ~/issues/rabbitmq-users/kombu-heartbeat-rb0Lqx1rSSQ_QtWy4gDNAgAJ (master=)
 $ source venv/3.7.2/bin/activate
+
 (3.7.2) lbakken@shostakovich ~/issues/rabbitmq-users/kombu-heartbeat-rb0Lqx1rSSQ_QtWy4gDNAgAJ (master=)
 $ pip install oslo-messaging
 Collecting oslo-messaging
