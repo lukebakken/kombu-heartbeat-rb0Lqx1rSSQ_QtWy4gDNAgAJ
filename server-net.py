@@ -132,8 +132,7 @@ if __name__ == "__main__":
     lst = []
 
     for i in range(num):
-        if parser.tf_queue_name:
-            server_name = parser.server + str(i)
+        server_name = parser.server
         t=threading.Thread(target=start_server, args=(parser,server_name))
         t.setDaemon(True)
         lst.append(t)
@@ -141,4 +140,3 @@ if __name__ == "__main__":
         t.start()
     for t in lst:
         t.join()
-

@@ -1,5 +1,4 @@
 #!-*- coding:UTF-8 -*-
- 
 import sys
 import argparse
 import logging
@@ -108,5 +107,4 @@ if __name__ == "__main__":
     parser = Parser().get_parser()
     log_init(parser.log_name)
     client = client(parser)
-    while True:
-        send(client, int(parser.num))
+    send(client, int(parser.num))
