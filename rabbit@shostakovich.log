@@ -1,0 +1,85 @@
+ Starting RabbitMQ 3.7.11 on Erlang 21.2.6
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See http://www.rabbitmq.com/
+2019-02-22 09:37:30.872 [info] <0.278.0> 
+ node           : rabbit@shostakovich
+ home dir       : /home/lbakken
+ config file(s) : /home/lbakken/issues/rabbitmq-users/kombu-heartbeat-rb0Lqx1rSSQ_QtWy4gDNAgAJ/rabbitmq.conf
+ cookie hash    : dcUa4Oz7dwb56LNQXcdWdg==
+ log(s)         : /home/lbakken/issues/rmq-generic-unix/rabbitmq_server-3.7.11/var/log/rabbitmq/rabbit@shostakovich.log
+                : /home/lbakken/issues/rmq-generic-unix/rabbitmq_server-3.7.11/var/log/rabbitmq/rabbit@shostakovich_upgrade.log
+                : <stdout>
+ database dir   : /home/lbakken/issues/rmq-generic-unix/rabbitmq_server-3.7.11/var/lib/rabbitmq/mnesia/rabbit@shostakovich
+2019-02-22 09:37:31.076 [info] <0.328.0> Memory high watermark set to 12826 MiB (13449651814 bytes) of 32066 MiB (33624129536 bytes) total
+2019-02-22 09:37:31.084 [info] <0.330.0> Enabling free disk space monitoring
+2019-02-22 09:37:31.084 [info] <0.330.0> Disk free limit set to 50MB
+2019-02-22 09:37:31.090 [info] <0.334.0> FHC read buffering:  OFF
+2019-02-22 09:37:31.090 [info] <0.333.0> Limiting to approx 130972 file handles (117872 sockets)
+2019-02-22 09:37:31.090 [info] <0.334.0> FHC write buffering: ON
+2019-02-22 09:37:31.091 [info] <0.278.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-02-22 09:37:31.130 [info] <0.278.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-02-22 09:37:31.130 [info] <0.278.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-02-22 09:37:31.130 [info] <0.278.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-02-22 09:37:31.140 [info] <0.364.0> Starting rabbit_node_monitor
+2019-02-22 09:37:31.172 [info] <0.278.0> Management plugin: using rates mode 'basic'
+2019-02-22 09:37:31.173 [info] <0.395.0> Making sure data directory '/home/lbakken/issues/rmq-generic-unix/rabbitmq_server-3.7.11/var/lib/rabbitmq/mnesia/rabbit@shostakovich/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-02-22 09:37:31.179 [info] <0.395.0> Starting message stores for vhost '/'
+2019-02-22 09:37:31.180 [info] <0.399.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-02-22 09:37:31.181 [info] <0.395.0> Started message store of type transient for vhost '/'
+2019-02-22 09:37:31.181 [info] <0.402.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-02-22 09:37:31.182 [warning] <0.402.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-02-22 09:37:31.183 [info] <0.395.0> Started message store of type persistent for vhost '/'
+2019-02-22 09:37:31.188 [warning] <0.423.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-02-22 09:37:31.188 [info] <0.437.0> started TCP listener on [::]:5672
+2019-02-22 09:37:31.189 [info] <0.278.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@shostakovich
+2019-02-22 09:37:31.189 [info] <0.278.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@shostakovich
+2019-02-22 09:37:31.226 [info] <0.489.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2019-02-22 09:37:31.226 [info] <0.595.0> Statistics database started.
+2019-02-22 09:37:31.226 [notice] <0.115.0> Changed loghwm of /home/lbakken/issues/rmq-generic-unix/rabbitmq_server-3.7.11/var/log/rabbitmq/rabbit@shostakovich.log to 50
+2019-02-22 09:37:31.283 [info] <0.8.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_management_agent
+ * rabbitmq_web_dispatch
+2019-02-22 09:37:48.257 [info] <0.606.0> accepting AMQP connection <0.606.0> (127.0.0.1:10480 -> 127.0.0.1:5672)
+2019-02-22 09:37:48.258 [info] <0.606.0> Connection <0.606.0> (127.0.0.1:10480 -> 127.0.0.1:5672) has a client-provided name: server-net.py:7312:561f7e41-f96f-4763-a555-bb5e2f2a173d
+2019-02-22 09:37:48.259 [info] <0.606.0> connection <0.606.0> (127.0.0.1:10480 -> 127.0.0.1:5672 - server-net.py:7312:561f7e41-f96f-4763-a555-bb5e2f2a173d): user 'guest' authenticated and granted access to vhost '/'
+2019-02-22 09:37:50.849 [info] <0.635.0> accepting AMQP connection <0.635.0> (127.0.0.1:10482 -> 127.0.0.1:5672)
+2019-02-22 09:37:50.849 [info] <0.635.0> Connection <0.635.0> (127.0.0.1:10482 -> 127.0.0.1:5672) has a client-provided name: client-net.py:7318:706b686f-d329-42d1-ac0e-37223cb36bf8
+2019-02-22 09:37:50.850 [info] <0.635.0> connection <0.635.0> (127.0.0.1:10482 -> 127.0.0.1:5672 - client-net.py:7318:706b686f-d329-42d1-ac0e-37223cb36bf8): user 'guest' authenticated and granted access to vhost '/'
+2019-02-22 09:37:50.857 [info] <0.653.0> accepting AMQP connection <0.653.0> (127.0.0.1:10484 -> 127.0.0.1:5672)
+2019-02-22 09:37:50.858 [info] <0.653.0> Connection <0.653.0> (127.0.0.1:10484 -> 127.0.0.1:5672) has a client-provided name: client-net.py:7318:de795890-6867-4604-ad58-0b8f8a7ca4dc
+2019-02-22 09:37:50.858 [info] <0.653.0> connection <0.653.0> (127.0.0.1:10484 -> 127.0.0.1:5672 - client-net.py:7318:de795890-6867-4604-ad58-0b8f8a7ca4dc): user 'guest' authenticated and granted access to vhost '/'
+2019-02-22 09:38:48.261 [error] <0.606.0> closing AMQP connection <0.606.0> (127.0.0.1:10480 -> 127.0.0.1:5672 - server-net.py:7312:561f7e41-f96f-4763-a555-bb5e2f2a173d):
+missed heartbeats from client, timeout: 20s
+2019-02-22 09:38:50.852 [error] <0.635.0> closing AMQP connection <0.635.0> (127.0.0.1:10482 -> 127.0.0.1:5672 - client-net.py:7318:706b686f-d329-42d1-ac0e-37223cb36bf8):
+missed heartbeats from client, timeout: 20s
+2019-02-22 09:38:51.859 [info] <0.671.0> accepting AMQP connection <0.671.0> (127.0.0.1:10490 -> 127.0.0.1:5672)
+2019-02-22 09:38:51.860 [info] <0.671.0> Connection <0.671.0> (127.0.0.1:10490 -> 127.0.0.1:5672) has a client-provided name: client-net.py:7318:706b686f-d329-42d1-ac0e-37223cb36bf8
+2019-02-22 09:38:51.860 [info] <0.671.0> connection <0.671.0> (127.0.0.1:10490 -> 127.0.0.1:5672 - client-net.py:7318:706b686f-d329-42d1-ac0e-37223cb36bf8): user 'guest' authenticated and granted access to vhost '/'
+2019-02-22 09:39:00.006 [info] <0.684.0> accepting AMQP connection <0.684.0> (127.0.0.1:10492 -> 127.0.0.1:5672)
+2019-02-22 09:39:00.006 [info] <0.684.0> Connection <0.684.0> (127.0.0.1:10492 -> 127.0.0.1:5672) has a client-provided name: server-net.py:7312:ec0a00a4-b0f3-48be-9c5d-c270cdd7c74c
+2019-02-22 09:39:00.007 [info] <0.684.0> connection <0.684.0> (127.0.0.1:10492 -> 127.0.0.1:5672 - server-net.py:7312:ec0a00a4-b0f3-48be-9c5d-c270cdd7c74c): user 'guest' authenticated and granted access to vhost '/'
+2019-02-22 09:39:00.060 [warning] <0.671.0> closing AMQP connection <0.671.0> (127.0.0.1:10490 -> 127.0.0.1:5672 - client-net.py:7318:706b686f-d329-42d1-ac0e-37223cb36bf8, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-02-22 09:39:00.060 [warning] <0.653.0> closing AMQP connection <0.653.0> (127.0.0.1:10484 -> 127.0.0.1:5672 - client-net.py:7318:de795890-6867-4604-ad58-0b8f8a7ca4dc, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-02-22 09:39:01.015 [info] <0.702.0> accepting AMQP connection <0.702.0> (127.0.0.1:10494 -> 127.0.0.1:5672)
+2019-02-22 09:39:01.018 [info] <0.702.0> Connection <0.702.0> (127.0.0.1:10494 -> 127.0.0.1:5672) has a client-provided name: server-net.py:7312:561f7e41-f96f-4763-a555-bb5e2f2a173d
+2019-02-22 09:39:01.019 [info] <0.702.0> connection <0.702.0> (127.0.0.1:10494 -> 127.0.0.1:5672 - server-net.py:7312:561f7e41-f96f-4763-a555-bb5e2f2a173d): user 'guest' authenticated and granted access to vhost '/'
+2019-02-22 09:40:01.021 [error] <0.702.0> closing AMQP connection <0.702.0> (127.0.0.1:10494 -> 127.0.0.1:5672 - server-net.py:7312:561f7e41-f96f-4763-a555-bb5e2f2a173d):
+missed heartbeats from client, timeout: 20s
+2019-02-22 09:40:02.036 [info] <0.721.0> accepting AMQP connection <0.721.0> (127.0.0.1:10546 -> 127.0.0.1:5672)
+2019-02-22 09:40:02.040 [info] <0.721.0> Connection <0.721.0> (127.0.0.1:10546 -> 127.0.0.1:5672) has a client-provided name: server-net.py:7312:561f7e41-f96f-4763-a555-bb5e2f2a173d
+2019-02-22 09:40:02.042 [info] <0.721.0> connection <0.721.0> (127.0.0.1:10546 -> 127.0.0.1:5672 - server-net.py:7312:561f7e41-f96f-4763-a555-bb5e2f2a173d): user 'guest' authenticated and granted access to vhost '/'
+2019-02-22 09:40:22.704 [warning] <0.721.0> closing AMQP connection <0.721.0> (127.0.0.1:10546 -> 127.0.0.1:5672 - server-net.py:7312:561f7e41-f96f-4763-a555-bb5e2f2a173d, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-02-22 09:40:22.704 [warning] <0.684.0> closing AMQP connection <0.684.0> (127.0.0.1:10492 -> 127.0.0.1:5672 - server-net.py:7312:ec0a00a4-b0f3-48be-9c5d-c270cdd7c74c, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-02-22 09:40:29.181 [warning] <0.445.0> RabbitMQ HTTP listener registry could not find context rabbitmq_management_tls
+2019-02-22 09:40:29.186 [info] <0.278.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping unregistration.
+2019-02-22 09:40:29.186 [info] <0.437.0> stopped TCP listener on [::]:5672
+2019-02-22 09:40:29.186 [info] <0.354.0> Closing all connections in vhost '/' on node 'rabbit@shostakovich' because the vhost is stopping
+2019-02-22 09:40:29.187 [info] <0.402.0> Stopping message store for directory '/home/lbakken/issues/rmq-generic-unix/rabbitmq_server-3.7.11/var/lib/rabbitmq/mnesia/rabbit@shostakovich/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent'
+2019-02-22 09:40:29.229 [info] <0.402.0> Message store for directory '/home/lbakken/issues/rmq-generic-unix/rabbitmq_server-3.7.11/var/lib/rabbitmq/mnesia/rabbit@shostakovich/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent' is stopped
+2019-02-22 09:40:29.230 [info] <0.399.0> Stopping message store for directory '/home/lbakken/issues/rmq-generic-unix/rabbitmq_server-3.7.11/var/lib/rabbitmq/mnesia/rabbit@shostakovich/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient'
+2019-02-22 09:40:29.236 [info] <0.399.0> Message store for directory '/home/lbakken/issues/rmq-generic-unix/rabbitmq_server-3.7.11/var/lib/rabbitmq/mnesia/rabbit@shostakovich/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient' is stopped
